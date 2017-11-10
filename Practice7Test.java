@@ -39,7 +39,7 @@ public class Practice7Test {
 		hashtable = new Hashtable();
 		
 		try {
-			if (! hashtable.contains(key)) {
+			if (! hashtable.containsKey(key)) {
 				if (hashtable.get(key).equals(null))
 					success = true;
 				else
@@ -84,7 +84,7 @@ public class Practice7Test {
 		hashtable = new Hashtable();
 		
 		try {
-			if (! hashtable.contains(key)) {
+			if (! hashtable.containsKey(key)) {
 				String shouldNotExist = hashtable.remove(key);
 				if (shouldNotExist != null || shouldNotExist.length() > 0)
 					success = false;
